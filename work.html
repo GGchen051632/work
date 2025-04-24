@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>作業4</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      padding: 40px;
+      background-color: white;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 20px;
+      max-width: 1000px;
+    }
+    .cell {
+      background-color: cyan;
+      text-align: center;
+      padding: 10px;
+      height: 250px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cell img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <h1>作業4</h1>
+  <div class="grid">
+ 
+    <div class="cell">王の笑容</div>
+    <div class="cell">東北往事</div>
+    <div class="cell">清明愛坤圖</div>
+
+    <!-- 第二列：圖片 -->
+    <div class="cell">
+      <img src="https://i0.hdslb.com/bfs/archive/b8de4ea38a6c078a5e993b47d31d3e91c47b0559.png" >
+    </div>
+    <div class="cell">
+      <img src="https://i0.hdslb.com/bfs/archive/c9b30a0a11f7743524a2f2fe1572c3aeeaebf148.jpg" >
+    </div>
+    <div class="cell">
+      <img src="https://i0.hdslb.com/bfs/archive/34db546e123321e65beabbe4d2917d284561fba5.jpg" >
+    </div>
+  </div>
+</body>
+</html>
+
